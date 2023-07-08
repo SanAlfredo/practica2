@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" :src="logo" width="600">
+    <HelloWorld msg="Bienvenidos a MegaDron"/>
   </div>
 </template>
 
@@ -13,6 +13,11 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld
+  },
+  data (){
+    return {
+      logo:"https://img.freepik.com/fotos-premium/drones-sociedad-futuro_825081-537.jpg?w=2000"
+    }
   }
 }
 </script>
