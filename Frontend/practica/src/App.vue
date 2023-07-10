@@ -1,21 +1,17 @@
 <template>
   <div class="container">
-    <nav class="nav-extended">
+    <nav class="nav-extended" style="background-color: teal;">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Megadron</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/products">Products</router-link></li>
-          <li><router-link to="/about">About</router-link></li>
+          <Menu></Menu>
         </ul>
       </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><router-link to="/">Home</router-link></li>
-      <li><router-link to="/products">Products</router-link></li>
-      <li><router-link to="/about">About</router-link></li>
+    <ul class="sidenav" id="mobile-demo" style="background-color: teal">
+      <Menu></Menu>
     </ul>
     <router-view />
   </div>
@@ -24,11 +20,12 @@
 <style lang="scss"></style>
 
 <script>
-
-
-
+import Menu from '@/components/Menu.vue'
 export default {
   name: 'AppView',
+  components: {
+    Menu
+  },
   data() {
     return {
     }

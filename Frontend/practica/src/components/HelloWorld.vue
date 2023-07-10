@@ -1,11 +1,11 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
+    <h1 class="textos">{{ msg }}</h1>
+    <p class="listas">
       Página dedicada a la venta de drones para todo uso, de todos los colores.
     </p>
-    <h3>Visitanos</h3>
-    <ul v-for="item in visita">
+    <h3 class="textos">Visitanos</h3>
+    <ul class="listas" v-for="item in visita">
       <li>{{ item }}</li>
     </ul>
   </div>

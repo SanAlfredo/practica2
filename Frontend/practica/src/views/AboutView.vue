@@ -1,26 +1,17 @@
 <template>
   <div class="about">
-    <img :src="logo" alt="" width="800" />
-    <h1>{{ appName }}</h1>
-    <p><i>La empresa nace como una sociedad anónima, con el capital de 4 compañeros empresarios privados que nos conocimos
+    <div class="img-conteiner" align="center">
+      <img :src="logo" alt="" width="800" />
+    </div>
+    <h1 class="textos">{{ appName }}</h1>
+    <p class="listas"><i>La empresa nace como una sociedad anónima, con el capital de 4 compañeros empresarios privados que nos conocimos
         dentro de la Universidad.</i></p>
     <div class="row" v-for="(item, key) in acerca">
-      <h3>{{ key }}</h3>
-      <p><i>{{ item }}</i> </p>
+      <h3 class="textos">{{ key }}</h3>
+      <p class="listas"><i>{{ item }}</i> </p>
     </div>
   </div>
 </template>
-<style type="text/css">
-H1,H3 {
-  text-align: center;
-  color:midnightblue
-}
-P,UL {
-  text-align:center;
-  color: darkgreen;
-}
-</style>
-  
 <script>
 
 export default {

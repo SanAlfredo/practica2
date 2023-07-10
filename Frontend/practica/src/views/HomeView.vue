@@ -1,10 +1,22 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" :src="logo" width="600">
+    <div align="center">
+      <img alt="Vue logo" :src="logo" width="600">
+    </div>
     <HelloWorld msg="Bienvenidos a MegaDron"/>
   </div>
 </template>
-
+<style type="text/css">
+.textos {
+  text-align: center;
+  color:midnightblue
+}
+.listas {
+  text-align:center;
+  color: darkgreen;
+  font-size: large;
+}
+</style>
 <script>
 // @ is an alias to /src
 import HelloWorld from '@/components/HelloWorld.vue'
