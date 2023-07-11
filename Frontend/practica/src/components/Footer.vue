@@ -1,5 +1,7 @@
 <template>
-    <footer style="background-color: orange"></footer>
+    <footer style="background-color: orange">
+    <slot name="comunicarse"></slot>
+    </footer>
   </template>
   
   <script>

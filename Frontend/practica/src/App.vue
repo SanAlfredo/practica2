@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <nav class="nav-extended" style="background-color: teal;">
+    <nav class="nav-extended" :style="{ backgroundColor: menuColor }">
       <div class="nav-wrapper">
         <a href="#" class="brand-logo">Megadron</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -10,7 +10,7 @@
       </div>
     </nav>
 
-    <ul class="sidenav" id="mobile-demo" style="background-color: teal">
+    <ul class="sidenav" id="mobile-demo" :style="{ backgroundColor: menuColor }">
       <Menu></Menu>
     </ul>
     <router-view />
@@ -28,6 +28,7 @@ export default {
   },
   data() {
     return {
+      menuColor: "teal"
     }
   },
   created() {
